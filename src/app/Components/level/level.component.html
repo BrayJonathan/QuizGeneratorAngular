@@ -1,0 +1,17 @@
+<mat-list-item>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Level:
+          </mat-panel-title>
+          <mat-panel-description>
+            {{Level.Name}}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+    
+        <mat-form-field form-field-control>
+          <input matInput placeholder="Level name" [(ngModel)]="Level.Name">
+        </mat-form-field>
+          <button mat-mini-fab color="primary" (click)="onUpdateLevel()"><mat-icon>edit</mat-icon></button>
+      </mat-expansion-panel>
+</mat-list-item> 
